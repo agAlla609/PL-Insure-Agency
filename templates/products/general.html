@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static', filename= 'css/product/products.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename= 'css/product/phover.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename= 'css/500px/p500.css')}}">
+{% endblock %}
+
+{% block body %}
+<div class="insurance-sec">    
+    <div class="txt">
+        <a class="comp-btn">GENERAL INSURANCE</a>
+        <h3>Protect your Personal Belongings.</h3>
+        <p>Your car and household possessions play an important role in your daily life. If you need to replace any of your belongings because of loss, theft or damage, the right insurance can give you peace of mind that you can do so timely and properly. As a result, you can minimise your financial burden when things go wrong.</p>    
+        <a href="{{url_for('home')}}#get-quote" class="quote">Get A Quote</a>
+    </div>
+    <div class="ins-pics">
+        <div class="con-top">
+            <div class="left"></div>
+            <img src="{{url_for('static', filename='images/general/motor5.jpeg')}}" alt="" class="mid">
+            <div class="rightt"></div>
+        </div>
+        <div class="con-mid">
+            <img class="left" src="{{url_for('static', filename='images/general/fam2.jpg')}}" alt="">
+            <img src="{{url_for('static', filename='images/general/gen2.jpg')}}" alt="" class="mid">
+            <img src="{{url_for('static', filename='images/general/travel2.jpg')}}" alt="" class="rightt">
+        </div>
+        <div class="con-bot">
+            <div class="left"></div>
+            <img src="{{url_for('static', filename='images/general/982.jpg')}}" alt="" class="mid">
+            <div class="rightt"></div>
+        </div>
+    </div>            
+</div>
+<div class="pal"></div>
+<div class="types">
+    <div class="type">
+        <h3>Vehicle Protection</h3>
+        <p>Cover any loss or damage by accidental means, such as theft, fire or malicious damage to your vehicle, and third-party liabilities like death, injuries and property damage.</p>
+        <div class="motor">
+            <div class="private">
+                <h3>Motor Private</h3>
+                <p>As you drive down life’s fast lane, the last thing you want to do is worry about little roadblocks like accidents and thefts. Have worry-free journeys, with essential protection froma good Insurance Company against accidental loss or damage to your personal private motor vehicle.
+                The cover is suitable for vehicles used for leisure, social, domestic and own private business.</p>
+            </div>
+            <div class="commercial">
+                <h3>Motor Commercial</h3>
+                <p>Are you in business? Have you spent a lot of money on your business vehicles? You want to be sure it's protected. Choosing Kenyan Alliance’ Motor Commercial cover is the best way to protect your fleet investment and your business.</p>
+            </div>
+        </div>
+    </div>
+    <div class="type s1">
+        <h3>Home Protection</h3>
+        <p>Cover any accidental loss or damage to the insured property due to: </p>
+        <ul>
+            <li>Fire, lightning, explosion, earthquake, storm, flood, cyclone, hurricane</li>
+            <li>Riot and strike and malicious damage</li>
+            <li>Aircraft and other aerial devices or articles dropped therefrom</li>
+            <li>Explosion of domestic appliances</li>
+            <li>Bursting or overflowing of water tanks apparatus or pipes</li>
+        </ul>
+    </div>
+    <div class="type">
+        <h3>Fires & Perils</h3>
+        <p>The basic Fire policy provides indemnity against loss or damage to property described, caused by fire, lightning and explosion. However, the policy can also be extended to cover riots, strike, malicious damage, storm, earthquake, impact by vehicles, aircraft and other aerial devices, subterranean fire, spontaneous combustion, explosion of industrial boilers and economizers, flooding, water damage due to bursting or overflowing of water tanks, apparatus, and pipes among others.  This insurance covers assets such as buildings, plant and machinery, stock insurance, furniture fixtures and fittings and office equipment. </p>
+    </div>
+    <div class="type">
+        <h3>Marine Cargo Insurance</h3>
+        <p>Coverage is meant for transportation of goods or items by sea or air. Marine Cargo Insurance policy provides indemnity against loss or damage for goods being transported by sea or air and incidental land transportation.  Either single voyage policies or annual policies are offered.</p>
+    </div>
+    <div class="type">
+        <h3>Personal Accident</h3>
+        <p>This covers accidental death or disablement to the insured. Compensation will be payable to the insured, trustee or legal representative in accordance with the scale of benefits agreed and specified in the policy schedule.</p>
+    </div>
+    <div class="type">
+        <h3>Travel Insurance</h3>
+        <p> This is an essential protection for anyone planning to travel. This type of travel medical insurance offers coverage for a range of unexpected events such as illness or injury during your travels or emergency evacuation.
+        It can also provide assistance in the event of a natural disaster orother unexpected incidents that could disrupt your trip. With this cover you can enjoy peace of mind and protection against potential risks that could spoil your travel experience.</p>
+    </div>
+    <div class="type">
+        <h3>Workman Injury Benefits Act (WIBA)</h3>
+        <p>Provides indemnity to an employer against legal liability under the Workmen Injury Act (2007) in respect of assessments and awards for bodily injury to a workman due to accident or occupational diseases arising out of and in the course of the employment by the employer in respect of the employer’s business
+        WIBA requires that all employees should be over 18 years of age.</p>
+    </div>
+    <div class="type">
+        <h3>All Risks</h3>
+        <p>It is appropriate for items that are used away from the domestic premises, for example, mobile phones, cameras, laptop computers, jewellery and other personal effects.
+        It covers the property of the insured whilst at any location and in any situation within the territorial scope specified in the schedule of the policy against any accident, fire, theft or other misfortune.</p>
+    </div>
+</div>
+{% endblock  %}
+    

@@ -1,0 +1,61 @@
+@media(max-width:480px){
+    .insurance-sec{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 200dvh;
+        width: 100dvw;
+        padding: 0;
+        gap: 10dvh;
+    }
+    .insurance-sec .txt{
+        width: 100dvw;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        min-height: 130dvh;
+    }
+    .insurance-sec .txt h3{
+        font-family: 'Space Grotesk',monospace;
+        font-size: 40px;
+        margin: 16px 0;
+    }
+    .txt p{
+        font-size: 20px;
+    }
+    .insurance-sec .ins-pics{
+        width: 315px;
+        height: 300px;
+    }
+   .insurance-sec .ins-pics .con-top,.insurance-sec .ins-pics .con-mid,.insurance-sec .ins-pics .con-bot{
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+   }
+   .insurance-sec .ins-pics .left,.insurance-sec .ins-pics .mid,.insurance-sec .ins-pics .rightt{
+        width:105px ;
+        height:100px;
+   }
+   .types{
+        width: 100dvw;
+   }
+   .types .type,.types .type .motor,.types .type .motor .private,.types .type .motor .commercial{
+        min-height:fit-content;
+        width: 90dvw;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+   }
+   .types .type.s1{
+        height: 150dvh;
+        gap: 3em;
+   }
+   .type .motor .private, .type .motor .commercial{
+        height: 50dvh;
+   }
+}   

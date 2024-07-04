@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PL Insurce Agency</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/index.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/base/nav.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/base/footer.css')}}">
+    <link rel="stylesheet" href="{{url_for ('static', filename='css/500px/index500.css')}}">
+    {% block head %} {% endblock %}
+        
+</head>
+<body>
+    <nav class="nav ">
+        <a class="logo" href="{{url_for('home')}}"><h1 style="letter-spacing: 1px;font-size:24px">PL Insurance Agency</h1></a>
+        <img src="{{url_for('static', filename ='images/logos/menu.png')}}" alt="MENU" class="menu">
+        <div class="right">
+            <img src="{{url_for('static', filename ='images/logos/close.png')}}" alt="CLOSE" class="close">
+            <a class="logo" href="{{url_for('home')}}"><img src="{{url_for('static', filename ='images/logos/Patrick Lungaho2.png')}}" alt="PL Insurance Agency" class="pl"></a>
+            <a href="{{url_for('home')}}#products">Products</a>
+            <a href="{{url_for('home')}}#about">About</a>
+            <a id="contact-info" href="{{url_for('home')}}#contact">Contact Us</a> 
+        </div>   
+    </nav>
+    {% block body %} {% endblock  %}
+    <footer id="contact">
+        <div class="contact-btn">
+            <a  class="comp-btn">CONTACT</a>
+            <p>For more information...</p>
+        </div>
+        <div class="f-logo">
+            <img src="{{url_for('static', filename ='images/logos/Patrick Lungaho2.png')}}" alt="" >
+        </div>
+        <div class="contact-info">
+            <h1>CONTACT</h1>
+            <p><a href="mailto:plinsureagency@gmail.com" style="text-decoration: none;">plinsureagency@gmail.com</a></p>
+            <p>+254 790-749-939</p>
+            <p>+254 738-295-120</p>
+        </div>
+        <div class="socials">
+            <h1>SOCIALS</h1>
+            <p><a href="http://">Facebook</a></p>
+            <p><a href="http://">LinkedIn</a></p>
+            <p><a href="http://">Twitter</a></p>
+        </div>
+    </footer>
+    <script src="{{url_for('static', filename = 'js/index.js')}}"></script>
+</body>
+</html>
+        

@@ -1,0 +1,113 @@
+.insurance-sec{
+    position: relative;
+    background-image:linear-gradient(180deg, #dbdfdf, #fff);
+    min-height:100dvh;
+    max-height: fit-content;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.insurance-sec .comp-btn{
+    background-color: #222;
+    color: #e3e4e4;
+    letter-spacing: 0.8px;
+}
+.txt{
+    width: 48dvw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    min-height: 100%;
+    padding: 5dvw;
+    transform: translateY(4dvh);
+}
+.txt h3{
+    font-family: 'Space Grotesk',monospace;
+    font-size: 50px;
+    margin: 16px 0;
+}
+.txt p{
+    font-size: 20px;
+}
+.ins-pics{
+    transform: translateY(5.5dvh);
+    width: 42.3dvw;
+    height: 75dvh;
+}
+.con-bot, .con-mid, .con-top{
+    display: flex;
+    height: 25dvh;
+    margin: 0;
+    padding: 0;
+}
+.ins-pics .left,.ins-pics .rightt, .ins-pics .mid{
+    width:14.1dvw ;
+    height: 100%;
+    margin: 0;
+}
+.con-mid .left, .con-mid .rightt, .con-bot .mid, .con-top .mid, .con-mid .mid{
+    width: 14.1dvw;
+    height: 100%;
+    border-radius: 10%;  
+    transition:0.4s ease-out; 
+}
+.con-mid .mid{
+    visibility: hidden;
+}
+.pal{
+    height: 20dvh;
+    background-image:linear-gradient(180deg,#fff, #e9e9e9);
+}
+.types{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5dvw;
+    padding-top: 0;
+    background-color:#e9e9e9;
+}
+.type{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: fit-content;
+    width: 80%;
+    border-bottom: 1px #2552b3 solid;
+    padding: 1em 0;
+}
+hr{
+    color: #2552b3;
+}
+.type h3{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 26px;
+    color: #2552b3;
+    width: inherit;
+    align-self: self-start;
+    margin: 0;
+    margin-top: 1em;
+}
+.motor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100% ;
+    gap: 3dvw;
+}
+.private, .commercial{
+    border: #222 1px groove;
+    padding:0 8px ;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 35dvw;
+    height: 30dvh;
+}
+.motor h3{
+    text-decoration: underline;
+    font-size: 18px;
+    color: #4b4a4a;
+}

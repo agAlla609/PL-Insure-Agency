@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static', filename= 'css/product/products.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename= 'css/product/phover.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename= 'css/500px/p500.css')}}">
+{% endblock %}
+{% block body %}
+<div class="insurance-sec">    
+    <div class="txt">
+        <a class="comp-btn">HEALTH INSURANCE</a>
+        <h3>Protect You & Your Loved Ones.</h3>
+        <p>We all know that life is not without any health risks, it's better to stay prepared for when that happens. You will need a plan that covers those medical expenses that always cost more than expected.</p>    
+        <a href="{{url_for('home')}}#get-quote" class="quote">Get A Quote</a>
+    </div>
+    <div class="ins-pics">
+        <div class="con-top">
+            <div class="left"></div>
+            <img src="{{url_for('static', filename ='images/health/625.jpg')}}" alt="" class="mid">
+            <div class="rightt"></div>
+        </div>
+        <div class="con-mid">
+            <img class="left" src="{{url_for('static', filename ='images/health/PA3.jpg')}}" alt="">
+            <img src="{{url_for('static', filename ='images/health/health3.jpg')}}" alt="" class="mid">
+            <img src="{{url_for('static', filename ='images/health/health.jpg')}}" alt="" class="rightt">
+        </div>
+        <div class="con-bot">
+            <div class="left"></div>
+            <img src="{{url_for('static', filename ='images/health/health2.jpg')}}" alt="" class="mid">
+            <div class="rightt"></div>
+        </div>
+    </div>            
+</div>
+<div class="pal"></div>
+<div class="types">
+    <div class="type">
+        <h3>Corporate Health Plans</h3>
+        <p>This plan enables your company employees to access superior in-patient and out-patient healthcare services through our various accredited healthcare service providers anytime they need to.</p>
+
+        <p>The Corporate plan is affordable and generous to meet your requirements. Providing exceptional cover options for a group.It is intended to cater for medical expenses arising out ofillness and accidental injuries.</p>
+            
+        <p>Depending on the size and profile of your corporate, we can help tailor an insurance plan that fits your corporate needs. </p>
+            
+        <p>Provided for a minimum of 10 employees</p>
+        
+    </div>
+    <div class="type">
+       <h3>SME Health Plan</h3>
+       <p>SME Health plan is a flexible and affordable private medical insurance for a small business regardless of the size of the company. </p>
+       <p>Overall, the cover provides for medical and surgical expenses reasonably incurred by the insured members as a direct result of their sustaining accidental bodily injury and/or illness and/or a disease within the period of insurance.</p>
+       <p>If the company is staffed from 2-250 people, a cover can be customized to ensure that the employees and or with dependents are covered while meeting specific business and healthcare needs. 
+
+        The staff will have quick access to high quality healthcare, avoiding the long waiting lists and they will also feel more valued.</p>
+    </div>
+    <div class="type">
+        <h3>Family Health Care Plan</h3>
+        <p>We know that your family's health matters more to you than anything, so we help you find an extensive cover on our cover that offers speedy access to medical care in numerous health providers.</p>
+
+        <p> It has extensive, comprehensive benefits and very affordable.</p>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: #e3e4e4;
+            width: 100dvw;
+            height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'PT Sans', sans-serif;
+        }
+        h3, h1,span{
+            color: #2f5fc7;
+            font-weight: bold;
+        }
+        .logo{
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            height: 20dvh;padding: 0;
+            margin: 0;
+            gap: 5dvh;
+            transform: translateY(5dvh);
+        }
+        .logo p{
+            font-size: 24px;
+            font-weight: bold;
+            color: #222;
+            transform: translateY(5dvh);
+            z-index: 1;
+        }
+        .logo,.client-deets,h3,h1, .message{
+            width: 40dvw;
+        }
+        .greet{
+            color: #222;
+            margin: 8px;
+            z-index: 3;
+            font-size: 18px;
+        }
+        p{
+            font-size: 18px;
+        }
+        h1,u{
+            font-size: 22px; 
+        }
+        img{
+            width: 15dvw;
+        }
+        @media(max-width:480px){
+            *{
+                width:95dvw;
+            }
+            body,.logo.client-deet{
+                display:flex;
+                flex-direction:column;
+                align-items:start;
+                justify-content:center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="/static/images/logos/Patrick Lungaho2.png" alt="" >
+        <p>Patrick Lung'aho Insurance Agency</p>
+    </div>
+    <h1><u>Client Quote</u></h1>
+    <h3 class="greet">Greetings Patrick, we have a new client who needs a quote!!!</h3>
+    <h3 class="greet">Find their contact infomation and message below...</h3>
+    
+    <div class="client-deets">
+        <h3><u>Client Details</u> </h3>
+        <p><span>Name: </span>{{fname}} {{lname}}</p>
+        <p><span>Email Address: </span><a href="mailto:{{email}}"></a>{{email}}</p>
+        <p><span>Phone Number: </span>{{mobile}}</p>
+        <p><span>Insurance Policy: </span>{{policy}}</p>
+    </div>
+    <h3><u>Message: </u></h3>
+    <p class="message">{{message}}</p>
+</body>
+</html>

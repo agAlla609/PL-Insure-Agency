@@ -1,0 +1,20 @@
+.ins-pics:hover .con-mid .mid{
+    visibility: visible;
+    transition: 0.4s ease-in;
+}
+.ins-pics:hover .con-mid .left{
+    transform: translateY(-100%);  
+    transition: 0.4s cubic-bezier(0.715, -0.610, 0.355, 1.6);  
+}
+.ins-pics:hover .con-mid .rightt{
+    transform: translateY(100%);  
+    transition: 0.4s cubic-bezier(0.715, -0.610, 0.355, 1.6);  
+}
+.ins-pics:hover .con-bot .mid{
+    transform: translateX(-100%);  
+    transition: 0.4s cubic-bezier(0.715, -0.610, 0.355, 1.6);  
+}
+.ins-pics:hover .con-top .mid{
+    transform: translateX(100%);  
+    transition: 0.4s cubic-bezier(0.715, -0.610, 0.355, 1.6);  
+}

@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static', filename= 'css/product/products.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename= 'css/product/phover.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename= 'css/500px/p500.css')}}">
+{% endblock %}
+{% block body %}
+<div class="insurance-sec">    
+    <div class="txt">
+        <a class="comp-btn">LIFE & PENSIONS </a>
+        <h3>Peace of Mind Incase of Eventuality.</h3>
+        <p>With the unsurety that comes with life, we help make sure in the event that something happens, your loved ones are well taken care of.</p>    
+        <a href="{{url_for('home')}}#get-quote" class="quote">Get A Quote</a>
+    </div>
+    <div class="ins-pics">
+        <div class="con-top">
+            <div class="left"></div>
+            <img src="{{url_for('static', filename ='images/life/life4.jpg')}}" alt="" class="mid">
+            <div class="rightt"></div>
+        </div>
+        <div class="con-mid">
+            <img class="left" src="{{url_for('static', filename ='images/life/life1.jpg')}}" alt="">
+            <img src="{{url_for('static', filename ='images/life/life3.jpg')}}" alt="" class="mid">
+            <img src="{{url_for('static', filename ='images/life/pen4.jpg')}}" alt="" class="rightt">
+        </div>
+        <div class="con-bot">
+            <div class="left"></div>
+            <img src="{{url_for('static', filename ='images/life/life2.jpg')}}" alt="" class="mid">
+            <div class="rightt"></div>
+        </div>
+    </div>            
+</div>
+<div class="pal"></div>
+<div class="types">
+    <div class="type">
+        <h3>Investment Provider</h3>
+        <p>It’s a low risk investment plan that ensures security for your capital and provides you with an opportunity to build up a lump sum either by monthly instalments or by single premium to meet your financial dreams of a comfortable future such as owning a car, going for a dream holiday, purchase of assets, start a business or family etc.</p>
+        
+    </div>
+    <div class="type">
+       <h3>Education Provider</h3>
+       <p>The education plan protects a child's future in case of an unfortunate case such as the demise of a parent or total permanent disability or critical illness, guaranteeing continuity of learning for the child</p>
+    </div>
+    <div class="type">
+        <h3>Home Ownership</h3>
+        <p>Homeowners insurance generally covers a wide range of potential damages to your home, other structures on your land, personal property, and your liability for injuries others sustain on your property.</p>
+    </div>
+</div>
+{% endblock %}
+    

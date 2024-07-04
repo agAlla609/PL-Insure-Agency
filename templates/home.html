@@ -1,0 +1,176 @@
+{% extends 'base.html' %}
+{% block head %}
+<link rel="stylesheet" href="{{url_for ('static', filename='css/hover.css')}} ">
+<link rel="stylesheet" href="{{url_for ('static', filename='css/about.css')}}"
+{% endblock  %}
+{% block body %}
+<div class="home">
+    <div class="home-text">
+        <h1 class="welcome">
+            Insurance Coverage You Can Trust.
+        </h1>
+        <p style="font-family: 'Open Sans', sans-serif; margin:0;">Whenever and wherever you need.</p>
+        <p style="font-family: 'Open Sans', sans-serif; margin:0;">It is our job to protect you and what you value most.</p><br>
+        <a href="#get-quote" class="quote">Get A Quote</a>
+    </div>
+    <div class="home-pics">
+        <div class="cont1">
+            <div class="ls">
+                <div class="blue1">
+                    <img src="{{url_for('static', filename ='images/life/amina2.jpg')}}" alt="">
+                </div>            
+            </div>
+            <div class="rs"></div>
+        </div>
+        <div class="cont2">
+            <div class="lms"></div>
+            <div class="rms">
+                <div class="blue2">
+                    <img src="{{url_for('static', filename ='images/health/corp2.jpg')}}" alt="">
+                </div> 
+            </div>
+        </div>
+        <div class="cont3">
+            <img src="{{url_for('static', filename ='images/general/128.jpg')}}" alt="">
+            <div class="bls">
+                <div class="blue3"></div>
+                <div class="blvck"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="insurances" id="products">
+    <section class="prod-titles">
+        <p id="service">PRODUCTS</p>
+        <p>Tailored Insurance For Every Stage Of Life</p>
+    </section>
+    <hr>
+    <div class="insurance-types">
+        <div class="insurance">
+            <img src="{{url_for('static', filename ='images/general/range.png')}}" alt="">
+            <h3>General Insurance</h3>
+            <section class="insurance-text">
+               <p>Your car and household possessions play an important role in your daily life.Trust us to help you minimise your financial burden when things go wrong.</p>
+               <a href="{{url_for('general')}}" class="quote">More Info</a> 
+               <a href="#get-quote" class="quote q">Get a Quote</a>
+            </section>
+        </div>
+        <div class="insurance">
+            <img src="{{url_for('static', filename ='images/health/health.jpg')}}" alt="">
+            <h3>Health Insurance</h3>
+            <section class="insurance-text">
+                <p>We all know that life is not without any health risks, it's better to stay prepared for when that happens. You will need a plan that covers those medical expenses that always cost more than expected.</p>
+               <a href="{{url_for('health')}}" class="quote">More Info</a> 
+               <a href="#get-quote" class="quote q">Get a Quote</a>
+            </section>
+        </div>
+        <div class="insurance">
+            <img src="{{url_for('static', filename ='images/life/fam3.png')}}" alt="">
+            <h3>Life Insurance</h3>
+            <section class="insurance-text">
+                <p>With the unsurety that comes with life, we help make sure in the event that something happens, your loved ones are well taken care of.</p>
+               <a href="{{url_for('life_n_pensions')}}" class="quote">More Info</a>
+               <a href="#get-quote" class="quote q">Get a Quote</a> 
+            </section>
+        </div>
+        <div class="insurance">
+            <img src="{{url_for('static', filename ='images/life/pen.jpg')}}" alt="">
+            <h3>Pensions</h3>
+            <section class="insurance-text">
+                <p>Creating a retirement strategy is vitally important. You need to start saving for retirement as soon as you start earning income. The sooner you start, the more you’ll accumulate.  Trust us to help you choose the pension plans  that will ensure you have a consistent source of income and allow you to maintain your lifestyle in the future. </p>
+               <a href="products/life.html" class="quote">More Info</a>
+               <a href="#get-quote" class="quote q">Get a Quote</a> 
+            </section>
+        </div>
+    </div>
+        
+
+</div>
+<div id="about">
+    <div class="about-title">
+        <a class="about-btn">ABOUT</a>
+        <p>Patrick Lungaho Insurance Agency</p>
+    </div>
+    <div class="about-text">
+        <p>We are a specialist insurance agency set up to competitively help you choose the best company set up to underwrite both exiting risks in the market as well as new risks currently not underwritten.Your financial and physical health are crucial to your overall well-being. That's why we're dedicated to providing you with resources and information to help you achieve financial stability and optimal health.</p>
+        <p><span>Our Vision</span> is to empower generations to be financially confident, secure and prosperous.</p>
+        <p><span>We as PL Insurance Agency are on a Mission </span>to protect health, wealth and reputation for comfort and peace to society </p>
+        <p>PL Insurance Agency was created by Patrick Lungaho, a professional insurance specialist.</p>
+    </div>
+    <div class="about-pics">
+        <div class="top">
+            <div class="top-left"></div>
+            <div class="top-right"></div>
+        </div>
+        <div class="bottom">
+            <div class="bt-left"></div>
+            <div class="bt-rgt"></div>
+        </div>
+    </div>
+</div>
+<div class="comp">
+    <a class="comp-btn">PARTNERS</a><br>
+    <p>Our Partnered Companies</p>
+</div>
+<div class="companies">
+    
+    <a href="https://www.jubileelife.com/"><img style="border-radius: 5px;" src="{{url_for('static', filename ='images/logos/jubilee.png')}}" alt="Jubilee Life" width="200px" height="125px"></a>
+    <a href="https://www.https://kenyanalliance.co.ke/"><img style="border-radius: 5px;" src="{{url_for('static', filename ='images/logos/kyalliance.png')}}" alt="Kenyan Alliance Insurance" width="200px" height="125px"></a>
+    <a href="https://fidelityshield.com"><img style="border-radius: 5px;" src="{{url_for('static', filename ='images/logos/fidelity.jpg')}}" alt="Fidelity" width="200px" height="125px"></a>
+    <a href="https://online.heritageinsurance.co.ke/eInsurance/home"><img style="border-radius: 5px;" src="{{url_for('static', filename ='images/logos/heitage.jpg')}}" alt="Heritage" width="200px" height="125px"></a>
+    <a href="http://apainsurance.org/"><img style="border-radius: 5px;" src="{{url_for('static', filename ='images/logos/APA.jpg')}}" alt="APA" width="200px" height="125px"></a>
+    <a href="https://aar-insurance.com/"><img style="border-radius: 5px;" src="{{url_for('static', filename ='images/logos/aar.jpg')}}" alt="AAR" width="200px" height="125px"></a>
+    <a href="https://www.pacisinsurance.com/"><img style="border-radius: 5px;" src="{{url_for('static', filename ='images/logos/pacis.jpg')}}" alt="Pacis" width="200px" height="125px"></a>
+    <a href="https://www.madison.co.ke/"><img style="border-radius: 5px;" src="{{url_for('static', filename ='images/logos/madison.png')}}" alt="Madison" width="200px" height="125px"></a>
+    <a href="https://www.oldmutual.co.ke/"><img style="border-radius: 5px;" src="{{url_for('static', filename ='images/logos/oldmutual.png')}}" alt="Old Mutual" width="200px" height="125px"></a>
+    <a href="http://www.sanlam.co.za/kenya/Pages/default.aspx"><img style="border-radius: 5px;" src="{{url_for('static', filename ='images/logos/Sanlam.jpg')}}" alt="SanLam" width="200px" height="125px"></a>        
+    
+</div>
+<div class="quote-section" id="get-quote">
+    <div class="q-head">
+        <a  class="q-btn">GET A QUOTE</a>
+        <p>Send A Message...</p>
+    </div> 
+    <div class="quote-sec">
+        <div class="quote-left">
+            <img src="{{url_for('static', filename ='images/general/cover.png')}}" alt="Are You Covered?" class="cover">
+        </div>    
+        <div class="quote-right">
+            <form method="post">
+                {{form.hidden_tag()}}
+                <fieldset>
+                    <legend>Talk To Us</legend>
+                    <div class="name">
+                        <div class="form-control">                               
+                            {{form.fname}}
+                            {{form.fname.label}}
+                        </div>
+                        <div class="form-control">                                
+                            {{form.lname}}
+                            {{form.lname.label}}
+                        </div>
+                    </div>
+                    <div class="form-control">
+                        {{form.email}}
+                        {{form.email.label}}
+                    </div>
+                    <div class="form-control">
+                        {{form.mobile}}
+                        {{form.mobile.label}}
+                    </div>
+                    <div class="form-control">
+                        {{form.policy}}
+                        {{form.policy.label}}
+                    </div>
+                    <div class="message">
+                        {{form.message.label}}
+                        {{form.message}}
+                    </div>
+                    <button class="form-btn" type="submit">{{form.submit.label}}</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock  %}
+    

@@ -1,0 +1,59 @@
+
+.home-pics:hover .cont1 .ls {
+    width: 21dvw;
+    margin: 0;
+    transition: all .4s ease-in-out;
+    
+}
+.home-pics:hover .cont1 .rs{
+    width: 18dvw;
+    margin: 0;
+    transition: all .4s ease-in-out;
+}
+.home-pics:hover .cont1 .ls .blue1{
+    width: 17dvw;
+    transform: translateX(3.5em);
+    transition-delay: 0.5ms;
+    transition: all .4s ease-in-out;
+
+}
+.home-pics:hover .cont1 .ls img{
+    transform: translateX(3.5em);
+    transition-delay: 0.5ms;
+    transition: all .4s ease-in-out;
+}
+.home-pics:hover .cont3 .bls .blvck,.home-pics:hover .cont3 .bls .blue3{
+    width: 0;
+    border: none;
+    transition-delay: 0.5ms;
+    transition: all .4s ease-in-out;
+}
+.home-pics:hover .cont2 .rms .blue2{
+    transform: translateX(-35%);
+    transition-delay: 0.5ms;
+    transition: all .4s ease-in-out;
+}
+.home-pics:hover .cont2 .rms img{
+    transform: translateX(-35%);
+    transition-delay: 0.5ms;
+    transition: all .4s ease-in-out;
+}
+.insurance:hover{
+    background-color: aliceblue;
+    color: #1a1919;
+    transition:0.4s all ease-in-out;
+}.insurance:hover h3, .insurance:hover .insurance-text p{
+    color: #1a1919;
+    transition:0.4s all ease-in-out;
+}
+.insurance:hover .quote.q{
+    background-color: aliceblue;
+    border: 1px #1a1919 groove;
+    color: #1a1919;
+    transition:0.4s all ease-in-out;
+}
+.insurance:hover .quote.q:hover{
+    color: aliceblue;
+    background-color: #111;
+    transition:0.4s all ease-in-out;
+}
